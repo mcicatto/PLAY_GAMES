@@ -11,7 +11,7 @@ const maps=[
 ["1111111111111111111111","1000000000000000000001","1011110111111011111101","1000010000001000000001","1111011111101111110101","1000010000100000010101","1011110110111111010101","1000000100000000010001","1011111101111111111101","1000000001000000000001","1011111011011111111101","1000000000000000000001","1111111111111111111111"],
 ["1111111111111111111111","1000000000000000000001","1011111110111111111101","1000000010000000000001","1110111011111011111101","1000100000001010000001","1011101111101010111101","1000001000000010000001","1011111011111111110101","1000001000000000010101","1011111110111111010101","1000000000000000000001","1111111111111111111111"]
 ];
-const info=[{name:"Blinky",color:"#ef4444",mode:"direct",corner:{r:1,c:C-2}},{name:"Pinky",color:"#ff75b5",mode:"ahead",corner:{r:1,c:1}},{name:"Inky",color:"#40d9e8",mode:"vector",corner:{r:R-2,c:C-2}},{name:"Clyde",color:"#f59e0b",mode:"shy",corner:{r:R-2,c:1}}];
+const info=[{name:"Blinky",color:"#ef4444",mode:"direct",corner:{r:1,c:C-2}},{name:"borsuk",color:"#ff75b5",mode:"ahead",corner:{r:1,c:1}},{name:"Inky",color:"#40d9e8",mode:"vector",corner:{r:R-2,c:C-2}},{name:"Clyde",color:"#f59e0b",mode:"shy",corner:{r:R-2,c:1}}];
 let map,player,ghosts,items,level=0,score=0,lives=3,time=60,running=false,last=0,acc=0;
 
 function openCells(){let a=[];for(let r=0;r<R;r++)for(let c=0;c<C;c++)if(map[r][c]=="0")a.push({r,c});return a}
